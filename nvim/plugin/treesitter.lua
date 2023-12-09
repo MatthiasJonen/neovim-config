@@ -76,11 +76,12 @@ configs.setup {
       },
     },
   },
-  context_commentstring = {
-    enable = true,
-  },
+--  context_commentstring = {
+--    enable = true,
+--  },
 }
 
+require('ts_context_commentstring').setup {}
 require('treesitter-context').setup {
   max_lines = 3,
 }
